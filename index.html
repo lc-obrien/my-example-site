@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<head>
+    <title>Favoutie Foods | List</title>
+    <link href="stylesheet.css" rel="stylesheet">
+</head>
+
+<body>
+    
+    <!--Navigator-->
+    <nav>
+        <div id="navigator">
+            <ul>
+                <li><a href="./index.html">List<a></li>
+                <li><a href="./pizza.html">Pizza</a></li>
+            </ul>
+        </nav>
+    <hr>
+
+    <!--Intro--> 
+    <div>
+        <h1>My Favourite Foods</h1>
+        <h3>Document Outline</h3>
+        <ul>
+            <li><a href="#pizza">Pizza</a></li>
+            <li><a href="#burgers">Burgers</a></li>
+            <li><a href="#pasta">Pasta</a></li>
+        </ul>
+    </div>
+    <hr>
+    
+    <!--Pizza-->
+    <div id="pizza">
+        <a href="./pizza.html"><h2>Pizza</h2></a>
+        <p>Pizza is probably my all time favourite food. I <strong>love</strong> the different options for pizza, and technically I can have a different type every time.</p>
+        <img src="./images/img_pizza.jpg" class='image'>
+        <p>My favourite place to get pizza is <a href="https://www.pizzarazzi.com.au/"  target="_blank">Pizza Razzi</a></p>
+        <h3>My favourite Pizzas:</h3>
+        <ol>
+            <li>Sweet Chilli Chicken</li>
+            <li>BBQ Chicken</li>
+            <li>Peperoni</li>
+        </ol>
+        <video src="./videos/vid_pizza.mp4" width="500" controls="">Video Not Supported</video>
+    </div>
+    <hr>
+    
+    <!--Burgers-->
+    <div id="burgers">
+        <h2>Burgers</h2>
+        <p>Coming in at a close <em>second</em>, I also love burger! kind of for the same reason as pizza - I can get some many types. But I also know that a simple cheese burger will go down nicely</p>
+        <img src="./images/img_burger.jpg" width="500">
+        <p>My favourite place to get burgers is <a href="https://theburgerhaus.com.au/" target="_blank">Burger Haus</a></p>
+    </div>
+    <hr>
+    
+    <!--Pasta-->
+    <div id="pasta">
+        <h2>Pasta</h2>
+        <p>Pasta is amazing! Not as much variety as the other options, but still so good!</p>
+        <img src="./images/img_pasta.jpg" width="500">
+        <p>My favourite place to get pasta is <a href="https://daangelo.com/ristorante/" target="_blank">Da Angelo Ristorante</a></p>
+    </div>
+    <hr>
+
+    <table>
+        <thead>
+            <tr>
+                <th>SHOP</th>
+                <th>LOCATION</th>
+                <th>REVIEW</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pizza Razzi</td>
+                <td>135 Sandy Bay Rd, Sandy Bay</td>
+                <td>4.3/5</td>
+            </tr>
+            <tr>
+                <td>Burger Haus</td>
+                <td>364A Elizabeth St, North Hobart</td>
+                <td>4.4/5</td>
+            </tr>
+            <tr>
+                <td>Da Angelo Ristorante</td>
+                <td>47 Hampden Rd, Battery Point</td>
+                <td>4.7/5</td>
+            </tr>
+            <tr>
+                <td colspan="3">The Best Food Ever! You should really try it!</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    
+    <!--From-->
+    <h1>Form</h1>
+    <p>please fill out this form:</p>
+    <form>
+        <label for="first-name">First Name: </label>
+        <input type="text" id="first-name" name="first-name" placeholder="First Name" min="8" maxlength="25" pattern="[a-zA-Z0-9]+" required>
+        <br>
+        <br>
+        <label for="last-name">Last Name: </label>
+        <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+        <br>
+        <br>
+        <label for="age">Age: </label>
+        <input type="number" id="age" name="age" min="8" max="110">
+        <br>
+        <br>
+        
+        <label for="rating">Rating</label>
+        <span>0</span>
+        <input type="range" id="rating" name="rating" min="0" max="5" step="0.5">
+        <span>5</span>
+        
+        <p>Choose your favourite Restaurant</p>
+        <label for="burger-haus">Burger Haus</label>
+        <input type="checkbox" name="restaurants" id="burger-haus">
+        <label for="pizza-razzi">Pizza Razzi</label>
+        <input type="checkbox" name="restaurants" id="pizza-razzi">
+        <label for="da-angelo">Da Angelo Ristorante</label>
+        <input type="checkbox" name="restaurants" id="da-angelo">
+        
+        <p>Choose your favourite type of food?</p>
+        <label for="food-burger">Burger</label>
+        <input type="radio" name="fav-food" id="food-burger">
+        <label for="food-pizza">Pizza</label>
+        <input type="radio" name="fav-food" id="food-pizza">
+        <label for="food-pasta">Pasta</label>
+        <input type="radio" name="fav-food" id="food-pasta">
+        <br>
+        <br>
+
+        <label for="other-food">What are your other favourite foods?</label>
+        <input type="text" list="other-food" name="other-food">
+        <datalist id="other-food">
+            <option value="burger">
+            <option value="pasta">
+            <option value="pizza">
+            <option value="indian">
+            <option value="chinese">
+        </datalist>
+        <br>
+        <br>
+        <label for="more-info">Enter more information here:</label>
+        <br>
+        <textarea name="more-info" id="more-info" cols="60" rows="10"></textarea>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
